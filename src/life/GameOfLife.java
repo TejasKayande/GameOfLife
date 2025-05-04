@@ -10,14 +10,15 @@ import java.awt.event.ActionListener;
 // TODO(Tejas): Remove This!!!
 import java.util.Random;
 
+
 public class GameOfLife extends JPanel {
 
     // NOTE(Tejas): CELL_WIDTH and CELL_HEIGHT are in pixels
-    public static final int CELL_WIDTH     = 10;
-    public static final int CELL_HEIGHT    = 10;
+    public static final int CELL_WIDTH     = 5;
+    public static final int CELL_HEIGHT    = 5;
 
-    public static final int NUMBER_OF_ROWS = 100;
-    public static final int NUMBER_OF_COLS = 100;
+    public static final int NUMBER_OF_ROWS = 800;
+    public static final int NUMBER_OF_COLS = 800;
 
     enum State {
         Dead,
@@ -135,7 +136,7 @@ public class GameOfLife extends JPanel {
                     float red   = row / (float)NUMBER_OF_COLS;
                     float green = col / (float)NUMBER_OF_ROWS;
 
-                    Color c = new Color(red, green, 0.5f);
+                    Color c = new Color(red, green, 0.3f);
                     g.setColor(c);
                     g.fillRect(x, y, CELL_WIDTH, CELL_HEIGHT);
                 }

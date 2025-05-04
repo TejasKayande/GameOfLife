@@ -3,6 +3,8 @@ package life;
 
 import javax.swing.*;
 
+// TODO(Tejas): Add a User Interface to allow editing the state with mouse
+
 public class Main extends JFrame {
 
     public Main() {
