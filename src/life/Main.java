@@ -2,6 +2,9 @@
 package life;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
 
 // TODO(Tejas): Add a User Interface to allow editing the state with mouse
 
@@ -16,6 +19,8 @@ public class Main extends JFrame {
         setResizable(false);
 
         GameOfLife game = new GameOfLife();
+
+
         add(game);
 
         setVisible(true);
